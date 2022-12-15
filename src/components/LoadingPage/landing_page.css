@@ -1,0 +1,52 @@
+#cointainer_{
+    width: 80%;
+    margin: auto auto auto auto;
+}
+#image_{
+    width: 50%;
+    height: 500px;
+    
+    box-sizing: border-box;
+    display: inline-block;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+#button_container_{
+    color: green;
+    
+    width: 50%;
+    height: 500px;
+   
+    box-sizing: border-box;
+    display: inline-block;
+    float: right;
+    padding: auto auto auto auto;
+    position: relative;
+}
+button{
+    color: green;
+    width: 60px;
+    border-radius: 5px;
+    height: 30px;
+}
+link{
+    color: green;
+}
+
+#button-div_{
+    height: 100px;
+    width: 150px; 
+  text-align: center;
+    /* margin: auto;
+    margin-top: 200px; */
+    /* display: flex;
+    justify-content: center; */
+     position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -50px 0 0 -50px;
+
+
+} 

@@ -1,0 +1,33 @@
+form{
+    width: 400px;
+    height: auto;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 10px auto auto auto;
+    border-radius: 5px;
+}
+#validLocation{
+    width: 100%;
+       
+}
+
+#author,#Location{
+    width: 42%;
+    display: inline-block;
+    float: left;
+    border-radius: 2px;
+    margin: 5px;
+}
+#description{
+    width: 84%;
+    display: block;
+    margin: auto auto auto auto;
+    border-radius: 2px;
+    margin: 5px;
+}
+button{
+    width: 80px;
+    margin: 10px auto 0px 42%;
+    display: inline-block;
+}
