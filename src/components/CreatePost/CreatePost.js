@@ -11,7 +11,8 @@ let navigate = useNavigate();
           e.preventDefault();
           console.log(data)        
           try {
-              await fetch("http://localhost:4000/getpost/post", {
+              // await fetch("http://localhost:4000/getpost/post", {    //https://instacloneapi.onrender.com/getpost/get
+              await fetch("https://instacloneapi.onrender.com/getpost/post", {
                   method: 'POST',
                   headers:{
                       'Accept': 'application/json',
@@ -31,8 +32,8 @@ let navigate = useNavigate();
     <div>
       <Hader />
 
-     <form onSubmit = {handleSubmit} action="http://localhost:4000/getpost/post" method="POST" enctype="multipart/form-data">          
-                   
+     {/* <form onSubmit = {handleSubmit} action="http://localhost:4000/getpost/post" method="POST" enctype="multipart/form-data"> */}
+     <form onSubmit = {handleSubmit} action="https://instacloneapi.onrender.com/getpost/post" method="POST" enctype="multipart/form-data">                  
       
         <div id="validLocation">
           <input

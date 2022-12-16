@@ -9,29 +9,20 @@ const Post = ()=>{
   
 //////// free apit ::: https://api.nationalize.io/?name=nathaniel
 useEffect(() => {
-    axios.get("http://localhost:4000/getpost/get")
-    // axios.get("https://instacloneapi.onrender.com/getpost/get")
+    // axios.get("http://localhost:4000/getpost/get")
+    axios.get("https://instacloneapi.onrender.com/getpost/get")
       .then((res) => {
-          setdata(res.data)
+        //reversing the response arry so that the last added post will come first 
+        let res_arr = res.data
+        let rev_res_arr = res_arr.reverse() 
+          setdata(rev_res_arr)
+          console.log(rev_res_arr)
       })
       .catch((err) => {
         console.log(err);
       });
   }, []);
-//
-    //  useEffect(()=>{
-    //     fetch("http://localhost:4000/getpost/get")
-    //     .then((e)=>{
-    //         return e.data
-    //     }).then((data)=>{
-    //         // setdata(e)+
-    //         console.log(data)
-    //     }).catch((error)=>{
-    //         // console.log(error)
-    //         console.log(error.response.data.error)
-    //     })
-    // },[])
-    // console.log(data1)
+        //Innisial data
     const data =  [
         {"name":"Siva",
         "location":"Bengaluru",
