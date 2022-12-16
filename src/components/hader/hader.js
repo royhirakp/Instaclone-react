@@ -1,5 +1,5 @@
 // import useState from "react"
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 // import icon from ""
 // import camera from "../../image/camera.png"
 import "./hader.css"
@@ -16,9 +16,9 @@ const Hader = ()=>{
                 <img src="./image/camera.png" alt="logo"/>
                 </Link> */}
 
-                <a href="/create">
-                <img src="./image/camera.png" alt="logo"/>
-                </a>
+                <Link to ="/create">
+                    <img src="./image/camera.png" alt="logo"/>
+                </Link>
                 
             </section>
         </nav>

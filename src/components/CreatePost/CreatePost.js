@@ -3,7 +3,7 @@ import { useState } from "react"
 import { useNavigate } from "react-router-dom";
 import "./CreatePost.css"
 import Hader from "../hader/hader";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 const CreatePost = () => {
 const [data, setdata] = useState({ image: "", name: "", location: "", description: "" })
 let navigate = useNavigate();
