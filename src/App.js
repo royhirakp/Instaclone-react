@@ -13,15 +13,10 @@ import CreatePost from './components/CreatePost/CreatePost';
 function App() {
   return (
     <>
-  {/* <Landing_page/>
-    <Postview/> */}
-    {/* <Hader/>
-    <Post/>    */}
     <BrowserRouter>
         <Routes>
           <Route path='/' element ={<Landingpage/>}/>
-          <Route path='/create' element ={<CreatePost/>}/>
-          
+          <Route path='/create' element ={<CreatePost/>}/>          
           <Route path='/post' element={<Postview/>}/>
         </Routes>
     </BrowserRouter>

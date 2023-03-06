@@ -2,7 +2,6 @@
 // import testcard from "../image/10x.png"
 import { AiOutlineHeart } from "react-icons/ai";
 import { BsFillArrowUpRightSquareFill } from "react-icons/bs"
-
 import "./Postcard.css"
 
 const Postcard = (props)=>{
