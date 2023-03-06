@@ -1,15 +1,14 @@
 import {useState , useEffect} from "react"
 import Postcard from "../../postcard/Postcard";
+import Loader from "../Loder";
 import axios from "axios"
 // import { useEffect } from "react";
 const Post = ()=>{
-    const [data1, setdata] = useState([])
-    
- //https://instacloneapi.onrender.com/getpost/get
-  
-//////// free apit ::: https://api.nationalize.io/?name=nathaniel
+    const [data1, setdata] = useState([]);
+    const [loder, setLoder] = useState(false)
+
 useEffect(() => {
-    // axios.get("http://localhost:4000/getpost/get")
+    setLoder(true)
     axios.get("https://instacloneapi.onrender.com/getpost/get")
       .then((res) => {
         //reversing the response arry so that the last added post will come first 
@@ -20,7 +19,10 @@ useEffect(() => {
       })
       .catch((err) => {
         console.log(err);
-      });
+      }).finally(()=>{
+        setLoder(false)
+      })
+      ;
   }, []);
         //Innisial data
     const data =  [
@@ -49,19 +51,16 @@ useEffect(() => {
 
     return (
         <>
+       {loder ? <Loader/>:""}
         {data1.map((obj,i)=>{
             return  (
-                <>              
-                <Postcard data={obj}/>                
-                </>
+                <Postcard data={obj} key={i*0.025554}/>                
             )
         })}
         <>
         {data.map((obj,i)=>{
-            return  (
-                <>              
-                <Postcard data={obj}/>                
-                </>
+            return  (     
+                <Postcard data={obj} key={i*0.055525}/>                
             )
         })}
     
