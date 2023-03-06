@@ -8,7 +8,7 @@ export default function Postview() {
     <Hader />
     <div 
     className="postviewContainer" 
-    style={{ "margin":"0 0 0 400px","display": "flex", "justify-content": " space-between" }}>
+    style={{ "margin":"0 0 0 400px","display": "flex", "justifyContent": " space-between" }}>
       <div 
       style={{ "margin": "0 0px 0px 0px" }}
       >

@@ -1,9 +1,10 @@
 #cointainrer{
     width: 500px;
-    height: 470px;
-    border:  1px solid black;
+    height: auto;
+    border: 1px solid black;
     border-radius: 5px;
     margin: 0 auto 10px auto;
+    padding: 36px 5px 10px 5px;
 }
 p{
     margin: 0;
@@ -15,7 +16,6 @@ header{
 }
 #name_place{
     display: inline-block;
-
     margin-left: 10px;
 }
 #option_icon{

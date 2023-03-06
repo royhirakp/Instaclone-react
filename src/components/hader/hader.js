@@ -29,7 +29,11 @@ const Hader = () => {
                         <p>Create</p>
                     </button>
                 </section>
+               
             </nav>
+            <div className="varticalLine">
+jsjs
+                </div>
         </>
     )
 }

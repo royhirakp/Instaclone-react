@@ -4,31 +4,32 @@ import { useNavigate } from "react-router-dom";
 import "./CreatePost.css"
 import Hader from "../hader/hader";
 import Loader from "../Loder";
+import axios from "axios"
 // import { Link } from "react-router-dom";
 const CreatePost = () => {
-const [data, setdata] = useState({ image: "", name: "", location: "", description: "" })
+const [data, setdata] = useState({ image: "", author: "", location: "", description: "" })
 const [loder, setLoder] = useState(false)
 let navigate = useNavigate();
      async function handleSubmit(e) {  
           e.preventDefault();
-          setLoder(true)
-          console.log(data)        
-          try {
-              // await fetch("http://localhost:4000/getpost/post", {    //https://instacloneapi.onrender.com/getpost/get
-              await fetch("https://instacloneapi.onrender.com/getpost/post", {
-                  method: 'POST',
-                  headers:{
-                      'Accept': 'application/json',
-                      'Content-Type':'application/json'
-                  },
-                  body: JSON.stringify({data})
-                })
-                
+          // console.log(data)
+            setLoder(true)
+          const formData = new FormData();    
+            formData.append('image',data.image,data.image.name);
+            formData.append('author',data.author);
+            formData.append('location',data.location);
+            formData.append('description',data.description);        
+            console.log(formData)
+
+            try {
+              await axios.post('https://instacloneapi.onrender.com/getpost/post',formData)
+                  // console.log(res,'<=image post axios')       
           } catch (error) {
               console.log(error)
-          }   
-          setLoder(false)
+          }
+         setLoder(false)
           navigate("../post")   
+          
         };
 
 //************************************************************************ */
@@ -40,22 +41,22 @@ let navigate = useNavigate();
       <Hader />
 
      {/* <form onSubmit = {handleSubmit} action="http://localhost:4000/getpost/post" method="POST" enctype="multipart/form-data"> */}
-     <form onSubmit = {handleSubmit} action="https://instacloneapi.onrender.com/getpost/post" method="POST" enctype="multipart/form-data">                  
+     <form onSubmit = {handleSubmit} >                  
       
         <div id="validLocation">
           <input
             type="file"
-            name="Imagefile"
+            name="image"
             // value={data.image}
-            onChange={(e) => setdata({ ...data, image: e.target.value })}
+            onChange={(e) => setdata({ ...data, image: e.target.files[0] })}
           />
           <input
             placeholder="Author"
             // value={data.author}
             id="author"
             type="text"
-            name="name"
-            onChange={(e) => setdata({ ...data, name: e.target.value })}
+            name="author"
+            onChange={(e) => setdata({ ...data, author: e.target.value })} 
           />
           <input
             placeholder="Location"

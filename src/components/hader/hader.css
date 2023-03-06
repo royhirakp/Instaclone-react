@@ -6,15 +6,24 @@ img{
     width: 100%;
 }
 nav{
-    border: 1px solid;
+    /* border: 1px solid; */
     width: 241px;
     display: inline-block;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     display: flex;
     flex-direction: column;
-    height: 230px;
+    height: 70px;
     position:fixed;
+}
+.varticalLine{
+    width: 0;
+    border: 1px solid rgb(155, 153, 153);
+    height: 787px;
+    position: fixed;
+    left: 241px;
+    bottom: -22px;
+    box-sizing: border-box;
 }
 .createButton{
     margin: 21px 12px 0 7px;

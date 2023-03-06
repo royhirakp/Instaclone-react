@@ -2,6 +2,7 @@ import {useState , useEffect} from "react"
 import Postcard from "../../postcard/Postcard";
 import Loader from "../Loder";
 import axios from "axios"
+import StaticPostCard from "../../postcard/SaticPostCard";
 // import { useEffect } from "react";
 const Post = ()=>{
     const [data1, setdata] = useState([]);
@@ -12,10 +13,11 @@ useEffect(() => {
     axios.get("https://instacloneapi.onrender.com/getpost/get")
       .then((res) => {
         //reversing the response arry so that the last added post will come first 
-        let res_arr = res.data
+        let res_arr = res.data.data
+        // console.log(res_arr)
         let rev_res_arr = res_arr.reverse() 
           setdata(rev_res_arr)
-          console.log(rev_res_arr)
+        //   console.log(rev_res_arr)
       })
       .catch((err) => {
         console.log(err);
@@ -25,29 +27,7 @@ useEffect(() => {
       ;
   }, []);
         //Innisial data
-    const data =  [
-        {"name":"Siva",
-        "location":"Bengaluru",
-        "like":64,
-        "description": "Kick start your career",
-        "PostImage": "../../image/10x.png",
-        "date": "12/02/2022"
-        },
-        {"name":"Neeraj",
-        "location":"Pune",
-        "like":30,
-        "description": "Sample Description",
-        "PostImage": "../image/nature.jfif",
-        "date": "15/05/2022"
-        },
-        {"name":"Rahul",
-        "location":"Hyderabad",
-        "like":30,
-        "description": "Sample Description for Post",
-        "PostImage": "../image/flight.jfif",
-        "date": "10/06/2022"
-        }
-        ]
+   
 
     return (
         <>
@@ -58,11 +38,12 @@ useEffect(() => {
             )
         })}
         <>
-        {data.map((obj,i)=>{
+        <StaticPostCard/>
+        {/* {data.map((obj,i)=>{
             return  (     
                 <Postcard data={obj} key={i*0.055525}/>                
             )
-        })}
+        })} */}
     
         </>
     
