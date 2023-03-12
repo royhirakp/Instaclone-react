@@ -61,7 +61,7 @@ export default function Landing_page() {
 
       </div>
       <div className='informationText'>
-        <b>N.B:</b>
+        <b>N.b:</b>
         This page is a copy of the original page(Only the UI) and does not have authorization and authentication functionalities. Only clicking on 'Continue as userID' will take you to the next page.
         </div>
         <ImageChangeMobileComponent/>
