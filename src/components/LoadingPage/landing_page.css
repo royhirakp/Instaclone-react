@@ -1,13 +1,15 @@
 #cointainer_{
     width: 100%;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 #image_{
-    height: 600px;    
+    height: 600px;
     box-sizing: border-box;
     display: inline-block;
+    position: relative;
+    left: 199px;
 }
 img{
     width: 100%;
@@ -20,13 +22,12 @@ img{
     height: 600px;
     box-sizing: border-box;
     display: inline-block;
-    /* border: 1px solid; */
-    /* float: right; */
+
     padding: auto auto auto auto;
     position: relative;
-    position: relative;
-    top: 37px;
+    bottom: 60px;
     margin-left: 33px;
+    left: 169px;
 }
 button{
     color: green;
@@ -161,3 +162,41 @@ link{
     bottom: 542px;
     left: 10px;
 }
+
+/* /CSS FOR THE COMPOMENT IMAGE CHANGE MOBILE COMPONENT */
+
+.Divtest{
+    background-color: black;
+    width: 233px;
+    height: 502px;
+    position: relative;
+    bottom: 764px;
+    left: 357px;
+}
+/* .imageTagChangephoto{
+    filter: brightness(1);
+} */
+.Divtest img{
+    border-radius: 18px;
+}
+
+.imageTagChangephoto {
+    animation: darkenAndBrighten 5s ease-in-out infinite;
+  }
+  
+  @keyframes darkenAndBrighten {
+    0% {
+      filter: brightness(1);
+    }
+    50% {
+      filter: brightness(0.5);
+    }
+    100% {
+      filter: brightness(1);
+    }
+  }
+  
+
+
+
+

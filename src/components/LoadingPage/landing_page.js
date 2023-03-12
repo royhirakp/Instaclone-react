@@ -3,6 +3,7 @@ import React from 'react';
 import "./landing_page.css"
 import { useNavigate, Link } from 'react-router-dom';
 // import { Link } from 'react-router-dom';
+import ImageChangeMobileComponent from './ImageChangeMobileComponent';
 export default function Landing_page() {
 
   const navigte = useNavigate();
@@ -63,6 +64,7 @@ export default function Landing_page() {
         <b>N.B:</b>
         This page is a copy of the original page(Only the UI) and does not have authorization and authentication functionalities. Only clicking on 'Continue as userID' will take you to the next page.
         </div>
+        <ImageChangeMobileComponent/>
     </>
   );
 }
