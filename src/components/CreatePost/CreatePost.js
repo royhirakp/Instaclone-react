@@ -14,8 +14,7 @@ const CreatePost = () => {
   });
   let navigate = useNavigate();
   //REDUX
-  const [postMutation, { isLoading, isError, isSuccess }] =
-    usePostFormDataMutation();
+  const [postMutation, { isLoading, isError }] = usePostFormDataMutation();
 
   async function handleSubmit(e) {
     e.preventDefault();
