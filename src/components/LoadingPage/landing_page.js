@@ -1,37 +1,35 @@
-
-import React from 'react';
-import "./landing_page.css"
-import { useNavigate, Link } from 'react-router-dom';
+import React from "react";
+import "./landing_page.css";
+import { useNavigate, Link } from "react-router-dom";
 // import { Link } from 'react-router-dom';
-import ImageChangeMobileComponent from './ImageChangeMobileComponent';
+import ImageChangeMobileComponent from "./ImageChangeMobileComponent";
 export default function Landing_page() {
-
   const navigte = useNavigate();
   return (
     <>
       <h2>Landing Page: Instagram Clone</h2>
       <div id="cointainer_">
-        <section id='image_'>
-          <img src="./image/instagram-mobile-logo.JPG" alt='landing imge ' />
-        </section>
+        {/* <section id="image_"> */}
+        <ImageChangeMobileComponent />
+        {/* <img src="./image/instagram-mobile-logo.JPG" alt="landing imge " /> */}
+        {/* </section> */}
 
-        <section id='button_container_'>
-          <div className='userInformation'>
+        <section id="button_container_">
+          <div className="userInformation">
             <div className="logoContainer">
-              <img src="./image/insta-logo.JPG" alt='landing imge ' />
+              <img src="./image/insta-logo.JPG" alt="landing imge " />
             </div>
             <div className="userDispalyPicContainer">
-              <img src="./image/displaypic.jfif" alt='landing imge ' />
-
+              <img src="./image/displaypic.jfif" alt="landing imge " />
             </div>
 
             <div className="buttoonContainer">
-              <button className='userLogin' onClick={() => navigte('/post')}> Continue as userID </button>
+              <button className="userLogin" onClick={() => navigte("/post")}>
+                Continue as userID{" "}
+              </button>
               <br />
-              <button className='userremove'  > Remove Account</button>
-
+              <button className="userremove"> Remove Account</button>
             </div>
-
           </div>
 
           <div className="singup">
@@ -44,27 +42,35 @@ export default function Landing_page() {
 
           <div className="gettheapp">
             <p>Get the app</p>
-            <div className='imgContainer'>
+            <div className="imgContainer">
               <div className="img1">
-                <img src="./image/google-paly-logo.JPG" alt="" />
+                <a
+                  target="_blanck"
+                  href="https://play.google.com/store/apps/details?id=com.instagram.android"
+                >
+                  <img src="./image/google-paly-logo.JPG" alt="" />
+                </a>
               </div>
               <div className="img2">
-                <img src="./image/micrefoft-logo.JPG" alt="" />
+                <a
+                  href="https://apps.microsoft.com/store/detail/instagram/9NBLGGH5L9XT"
+                  target="_blanck"
+                >
+                  <img src="./image/micrefoft-logo.JPG" alt="" />
+                </a>
               </div>
             </div>
           </div>
 
           {/* usenavigate is laginfg   .... link tag is working fast */}
         </section>
-
-       
-
       </div>
-      <div className='informationText'>
+      {/* <div className="informationText">
         <b>N.b:</b>
-        This page is a copy of the original page(Only the UI) and does not have authorization and authentication functionalities. Only clicking on 'Continue as userID' will take you to the next page.
-        </div>
-        <ImageChangeMobileComponent/>
+        This page is a copy of the original page(Only the UI) and does not have
+        authorization and authentication functionalities. Only clicking on
+        'Continue as userID' will take you to the next page.
+      </div> */}
     </>
   );
 }

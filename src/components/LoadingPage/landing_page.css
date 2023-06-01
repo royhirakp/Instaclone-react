@@ -1,201 +1,201 @@
-#cointainer_{
-    width: 100%;
-    /* display: flex;
+#cointainer_ {
+  width: 100%;
+  /* border: 1px solid blue; */
+  box-sizing: border-box;
+  /* display: flex;
     justify-content: center;
     align-items: center; */
 }
-#image_{
-    height: 600px;
-    box-sizing: border-box;
-    display: inline-block;
-    position: relative;
-    left: 199px;
+#image_ {
+  height: 600px;
+  /* border: 1px solid blue; */
+  box-sizing: border-box;
+  display: inline-block;
+  /* position: relative;
+  left: 199px; */
 }
-img{
-    width: 100%;
-    height: 100%;
-}
-
-#button_container_{
-    color: green;
-    width: 400px;
-    height: 600px;
-    box-sizing: border-box;
-    display: inline-block;
-    padding: auto auto auto auto;
-    position: relative;
-    bottom: 60px;
-    margin-left: 33px;
-    left: 169px;
-}
-button{
-    color: green;
-    width: 60px;
-    border-radius: 5px;
-    height: 30px;
-}
-link{
-    color: green;
+img {
+  width: 100%;
+  height: 100%;
 }
 
-#button-div_{
-    height: 100px;
-    width: 150px; 
-    text-align: center;
-     position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -50px 0 0 -50px;
-} 
-.logoContainer{
-    width: 44%;
-    height: 10%;
-    /* border: 1px solid;        */
-    margin: 0 auto;
-
+#button_container_ {
+  color: green;
+  width: 400px;
+  height: 600px;
+  box-sizing: border-box;
+  display: inline-block;
+  /* padding: auto auto auto auto; */
+  position: relative;
+  bottom: 60px;
+  /* margin-left: 33px; */
+  /* left: 169px; */
 }
-.userDispalyPicContainer{
-    width: 91px;
-    height: 91px;
-    border: 1px solid black;
-    border-radius: 50%;
-    margin: 20px auto 20px;
-    line-height: 70px;
+button {
+  color: green;
+  width: 60px;
+  border-radius: 5px;
+  height: 30px;
 }
-.userDispalyPicContainer img{
-    width: 79%;
-    height: 78%;
-    position: relative;
-    bottom: -8px;
-    right: -10px;
-    z-index: -99999;
-    
-}
-.userInformation{
-    border: 1px solid black;
-    padding: 6px;
+link {
+  color: green;
 }
 
-
-.singup{
-    border: 1px solid;
-    margin-top: 20px;
-    height: 66px;
-    text-align: center;
-    padding: 10px 0 00 0;
-    padding: 20px 0 auto;
+#button-div_ {
+  height: 100px;
+  width: 150px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -50px 0 0 -50px;
 }
-.singup p{
-    width: 100%;
-    padding: 0;
-    margin: 0;
+.logoContainer {
+  width: 44%;
+  height: 10%;
+  /* border: 1px solid;        */
+  margin: 0 auto;
 }
-.img1{
-    width: 119px;
-    /* border: 1px solid; */
-    float: left;
+.userDispalyPicContainer {
+  width: 91px;
+  height: 91px;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin: 20px auto 20px;
+  line-height: 70px;
 }
-.img2{
-    width: 100px;
-    /* border: 1px solid; */
-    float: left;
+.userDispalyPicContainer img {
+  width: 79%;
+  height: 78%;
+  position: relative;
+  bottom: -8px;
+  right: -10px;
+  z-index: -99999;
 }
-
-.gettheapp{
-    /* border: 1px solid; */
-    margin-top: 10px;
-}
-
-.gettheapp p{
-   padding: 10px;
-   text-align: center;
-}
-.gettheapp > div{
-    /* background-color: red; */
-    width: 100%;
-    /* border: 1px solid; */
-    /* height: 200px; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.gettheapp > div:first-child{
-    width: 110px;
+.userInformation {
+  border: 1px solid black;
+  padding: 6px;
 }
 
-.userLogin{
-    /* button */
-    width: 144px;
-    display: inline-block;
-    border: none;
-    background-color: cornflowerblue;
-    color: #ffff;
-    font-weight: 600;
-    cursor: pointer;
+.singup {
+  border: 1px solid;
+  margin-top: 20px;
+  height: 66px;
+  text-align: center;
+  padding: 10px 0 00 0;
+  padding: 20px 0 auto;
 }
-.userLogin:hover{
-    color: cornflowerblue;
-    background-color: #ffff;
+.singup p {
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
-
-.userremove{ 
-    /* button */
-    cursor: pointer;
-    width: 144px;
-    margin: 10px auto 0px 42%;
-    display: inline-block;
-    background-color: #ffff;
-    border: none;
-    font-weight: 600;
-    color: cornflowerblue;
+.img1 {
+  width: 119px;
+  /* border: 1px solid; */
+  float: left;
 }
-.buttoonContainer{
-    /* border: 1px solid; */
-    padding: 2px 111px 0 0px;
+.img2 {
+  width: 100px;
+  /* border: 1px solid; */
+  float: left;
 }
 
-.informationText{
-    width: 200px;
-    font-size: 11px;
-    position: relative;
-    bottom: 542px;
-    left: 10px;
+.gettheapp {
+  /* border: 1px solid; */
+  margin-top: 10px;
+}
+
+.gettheapp p {
+  padding: 10px;
+  text-align: center;
+}
+.gettheapp > div {
+  /* background-color: red; */
+  width: 100%;
+  /* border: 1px solid; */
+  /* height: 200px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gettheapp > div:first-child {
+  width: 110px;
+}
+
+.userLogin {
+  /* button */
+  width: 144px;
+  display: inline-block;
+  border: none;
+  background-color: cornflowerblue;
+  color: #ffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+.userLogin:hover {
+  color: cornflowerblue;
+  background-color: #ffff;
+}
+
+.userremove {
+  /* button */
+  cursor: pointer;
+  width: 144px;
+  margin: 10px auto 0px 42%;
+  display: inline-block;
+  background-color: #ffff;
+  border: none;
+  font-weight: 600;
+  color: cornflowerblue;
+}
+.buttoonContainer {
+  /* border: 1px solid; */
+  padding: 2px 111px 0 0px;
+}
+
+.informationText {
+  width: 200px;
+  font-size: 11px;
+  position: relative;
+  bottom: 542px;
+  left: 10px;
 }
 
 /* /CSS FOR THE COMPOMENT IMAGE CHANGE MOBILE COMPONENT */
 
-.Divtest{
-    background-color: black;
-    width: 233px;
-    height: 502px;
-    position: relative;
-    bottom: 774px;
-    left: 357px;
+#instaMobileeImageMainContainer {
+  /* border: 2px solid black; */
+  display: inline-block;
+  /* display: flex; */
 }
-/* .imageTagChangephoto{
-    filter: brightness(1);
-} */
-.Divtest img{
-    border-radius: 18px;
+
+.Divtest {
+  background-color: black;
+  width: 233px;
+  height: 502px;
+  display: inline-block;
+  position: relative;
+  bottom: 58px;
+  left: -259px;
+}
+
+.Divtest img {
+  border-radius: 18px;
 }
 
 .imageTagChangephoto {
-    animation: darkenAndBrighten 5s ease-in-out infinite;
+  animation: darkenAndBrighten 5s ease-in-out infinite;
+}
+
+@keyframes darkenAndBrighten {
+  0% {
+    filter: brightness(1);
   }
-  
-  @keyframes darkenAndBrighten {
-    0% {
-      filter: brightness(1);
-    }
-    50% {
-      filter: brightness(0.5);
-    }
-    100% {
-      filter: brightness(1);
-    }
+  50% {
+    filter: brightness(0.5);
   }
-  
-
-
-
-
+  100% {
+    filter: brightness(1);
+  }
+}

@@ -1,27 +1,20 @@
-// import logo from './logo.svg';
-import './App.css';
-// import Hader from './components/hader/hader';
-// import Card from './components/card/card';
-// import Postcard from './postcard/Postcard';
-// import Post from './components/post/post';
-// import Landing_page from './LoadingPage/landing_page';
-import Landingpage from './components/LoadingPage/landing_page';
-import Postview from './PostView/postview';
-import {BrowserRouter, Routes, Route} from "react-router-dom"
-import CreatePost from './components/CreatePost/CreatePost';
+import Landingpage from "./components/LoadingPage/landing_page";
+import Postview from "./components/PostView/postview";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import CreatePost from "./components/CreatePost/CreatePost";
+import ImageChangeMobileComponent from "./components/LoadingPage/ImageChangeMobileComponent";
 
 function App() {
   return (
     <>
-    <BrowserRouter>
+      <BrowserRouter>
         <Routes>
-          <Route path='/' element ={<Landingpage/>}/>
-          <Route path='/create' element ={<CreatePost/>}/>          
-          <Route path='/post' element={<Postview/>}/>
+          <Route path="/" element={<Landingpage />} />
+          <Route path="/create" element={<CreatePost />} />
+          <Route path="/post" element={<Postview />} />
+          <Route path="/1" element={<ImageChangeMobileComponent />} />
         </Routes>
-    </BrowserRouter>
-    
-  
+      </BrowserRouter>
     </>
   );
 }
