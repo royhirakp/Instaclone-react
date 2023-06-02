@@ -3,17 +3,17 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 export const getApiSlice = createApi({
   reducerPath: "api",
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://instacloneapi.onrender.com/getpost",
+    baseUrl: "https://instacloneapi.onrender.com/api/v1",
   }),
   endpoints(builder) {
     return {
       fetchData: builder.query({
-        query: () => "/get",
+        query: () => "/instapost",
       }),
       //post request
       postFormData: builder.mutation({
         query: (formData) => ({
-          url: "/post",
+          url: "/instapost",
           method: "POST",
           body: formData,
         }),

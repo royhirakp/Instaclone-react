@@ -4,6 +4,14 @@ import { useNavigate, Link } from "react-router-dom";
 // import { Link } from 'react-router-dom';
 import ImageChangeMobileComponent from "./ImageChangeMobileComponent";
 export default function Landing_page() {
+  // useEffect(() => {
+  //   function fun() {
+  //     fetch("http://localhost:4000/api/v1/instapost")
+  //       .then((res) => res.json())
+  //       .then((data) => console.log(data));
+  //   }
+  //   fun();
+  // }, []);
   const [detailsState, setDetailsState] = useState(false);
   const navigte = useNavigate();
   return (
@@ -77,7 +85,11 @@ export default function Landing_page() {
       </div>
       <div
         className="informationText"
-        style={{ display: `${detailsState ? "" : "none"}` }}
+        style={{
+          display: `${detailsState ? "" : "none"}`,
+          backgroundColor: "#ffff",
+          border: "1px solid ",
+        }}
       >
         <b>N.b:</b>
         This page is a copy of the original page(Only the UI) and does not have
