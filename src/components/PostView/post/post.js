@@ -2,7 +2,7 @@ import Postcard from "../post/postcard/Postcard";
 import Loader from "../../featurs/Loder";
 import StaticPostCard from "../post/postcard/SaticPostCard";
 import { useFetchDataQuery } from "../../../Redux/getDataPApi/getDataApi";
-import { useEffect } from "react";
+import { memo, useEffect } from "react";
 
 const Post = () => {
   const { data, isFetching, isError, refetch } = useFetchDataQuery();
@@ -11,7 +11,7 @@ const Post = () => {
 
   useEffect(() => {
     refetch();
-  }, []);
+  }, [refetch]);
 
   return (
     <>
@@ -26,4 +26,4 @@ const Post = () => {
     </>
   );
 };
-export default Post;
+export default memo(Post);

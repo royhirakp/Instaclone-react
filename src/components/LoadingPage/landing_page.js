@@ -9,11 +9,9 @@ export default function Landing_page() {
     <>
       <h2>Landing Page: Instagram Clone</h2>
       <div id="cointainer_">
-        {/* <section id="image_"> */}
-        <ImageChangeMobileComponent />
-        {/* <img src="./image/instagram-mobile-logo.JPG" alt="landing imge " /> */}
-        {/* </section> */}
-
+        <section className="instaPageAnimationContainer">
+          <ImageChangeMobileComponent />
+        </section>
         <section id="button_container_">
           <div className="userInformation">
             <div className="logoContainer">
@@ -61,8 +59,6 @@ export default function Landing_page() {
               </div>
             </div>
           </div>
-
-          {/* usenavigate is laginfg   .... link tag is working fast */}
         </section>
       </div>
       {/* <div className="informationText">

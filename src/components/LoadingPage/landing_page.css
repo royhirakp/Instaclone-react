@@ -2,10 +2,15 @@
   width: 100%;
   /* border: 1px solid blue; */
   box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
   /* display: flex;
     justify-content: center;
     align-items: center; */
 }
+
 #image_ {
   height: 600px;
   /* border: 1px solid blue; */
@@ -19,17 +24,24 @@ img {
   height: 100%;
 }
 
+.instaPageAnimationContainer {
+  position: relative;
+  left: 7%;
+}
+
 #button_container_ {
   color: green;
   width: 400px;
   height: 600px;
   box-sizing: border-box;
   display: inline-block;
-  /* padding: auto auto auto auto; */
   position: relative;
-  bottom: 60px;
+  right: 7%;
+  /* padding: auto auto auto auto; */
+  /* position: absolute; */
+  top: 60px;
   /* margin-left: 33px; */
-  /* left: 169px; */
+  /* left: 450px; */
 }
 button {
   color: green;
@@ -177,7 +189,7 @@ link {
   display: inline-block;
   position: relative;
   bottom: 58px;
-  left: -259px;
+  left: -258.5px;
 }
 
 .Divtest img {

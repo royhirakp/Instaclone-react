@@ -1,6 +1,7 @@
 import { AiOutlineHeart } from "react-icons/ai";
 import { BsFillArrowUpRightSquareFill } from "react-icons/bs";
 import "./Postcard.css";
+import { memo } from "react";
 
 const Postcard = (props) => {
   const { author, location, like, description, image, Date } = props.data;
@@ -43,4 +44,4 @@ const Postcard = (props) => {
     </>
   );
 };
-export default Postcard;
+export default memo(Postcard);
