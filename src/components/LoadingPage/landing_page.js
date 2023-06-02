@@ -1,13 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import "./landing_page.css";
 import { useNavigate, Link } from "react-router-dom";
 // import { Link } from 'react-router-dom';
 import ImageChangeMobileComponent from "./ImageChangeMobileComponent";
 export default function Landing_page() {
+  const [detailsState, setDetailsState] = useState(false);
   const navigte = useNavigate();
   return (
     <>
-      <h2>Landing Page: Instagram Clone</h2>
+      <h3
+        onMouseLeave={() => setDetailsState(false)}
+        onMouseEnter={() => setDetailsState(true)}
+      >
+        Landing Page: Instagram Clone{" "}
+        <span>
+          <u>
+            <b>
+              <i>( Hover here mouse for detailes)</i>
+            </b>
+          </u>
+        </span>
+      </h3>
+
       <div id="cointainer_">
         <section className="instaPageAnimationContainer">
           <ImageChangeMobileComponent />
@@ -61,12 +75,15 @@ export default function Landing_page() {
           </div>
         </section>
       </div>
-      {/* <div className="informationText">
+      <div
+        className="informationText"
+        style={{ display: `${detailsState ? "" : "none"}` }}
+      >
         <b>N.b:</b>
         This page is a copy of the original page(Only the UI) and does not have
         authorization and authentication functionalities. Only clicking on
         'Continue as userID' will take you to the next page.
-      </div> */}
+      </div>
     </>
   );
 }

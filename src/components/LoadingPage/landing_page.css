@@ -169,7 +169,7 @@ link {
 .informationText {
   width: 200px;
   font-size: 11px;
-  position: relative;
+  position: fixed;
   bottom: 542px;
   left: 10px;
 }
